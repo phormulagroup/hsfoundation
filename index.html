@@ -90,6 +90,15 @@
         transform: rotateX(180deg);
       }
 
+      @media only screen and (max-width: 900px) {
+        .digit {
+          font-size: 60px;
+          width: 60px;
+          height: 100px;
+          line-height: 100px;
+        }
+      }
+
       @media only screen and (max-width: 600px) {
         .digit {
           font-size: 40px;
@@ -141,7 +150,9 @@
     <!-- ---------- -->
     <!-- BANNER -->
     <!-- ---------- -->
-    <div class="pt-[15%] pb-[2%] flex flex-col justify-center items-center w-full bg-center bg-cover bg-[url(https://hsfoundation.phormuladev.com/assets/Banner.jpg)]">
+    <div
+      class="min-h-[100vh] pt-[15%] pb-[2%] flex flex-col justify-center items-center w-full bg-center bg-cover bg-[url(https://hsfoundation.phormuladev.com/assets/Banner.jpg)]"
+    >
       <div data-aos="fade-down" data-aos-delay="300" class="flip-clock" id="flipClock"></div>
       <p class="pl-[20px] pr-[20px] text-[#FFF] lg:text-[28px] text-[18px] text-center">people diagnosed with HS in the US, and counting...</p>
       <div class="flex lg:flex-row flex-col lg:gap-10 gap-2 w-full mt-[60px] lg:bg-[transparent] bg-[rgba(17,17,17,.7)] lg:p-0 p-6">
@@ -163,7 +174,7 @@
     <!-- ---------- -->
     <!-- TABS -->
     <!-- ---------- -->
-    <div class="flex sticky top-[80px] z-10">
+    <div class="flex sticky top-[75px] z-10">
       <a
         id="timeline-tab"
         class="w-1/3 flex lg:!flex-row flex-col justify-start lg:justify-center items-center bg-[#111111] border-solid border-[1px_1px_1px_0] border-white p-[10px] lg:p-[20px]"
@@ -199,7 +210,7 @@
     <!-- ---------- -->
     <div id="timeline" class="bg-[#F3CE49] flex items-center justify-center p-[20px_40px_80px_40px]">
       <div class="w-full max-w-[1600px] mt-[100px]">
-        <div class="grid lg:grid-cols-3 grid-cols-1 gap-[100px] relative p-[10x] lg:pr-8 pl-8">
+        <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-4 relative p-[10x] lg:pr-8 pl-8">
           <!-- Linha horizontal -->
 
           <div data-aos="grow" class="lg:block hidden absolute bottom-[80px] left-0 right-0 h-[5px] bg-[#111111] z-7"></div>
@@ -221,9 +232,9 @@
               </div>
               <img data-aos="zoom-in" data-aos-delay="700" src="https://hsfoundation.phormuladev.com/assets/Today.svg" class="lg:!mt-[-100px] !mt-[30px]" />
               <p class="text-[20px] !mt-[40px]">
-                <b>HS is common: More than 2.5 million people in the US</b> have already been diagnosed with HS and have received treatment<sup>1</sup>
+                <b>HS is common: More than 2.5 million people in the US</b> have already been diagnosed with HS and have received treatment<sup>1</sup>.
               </p>
-              <p class="text-[20px] !mt-4"><b>That's about 1%</b> of the adult US population</p>
+              <p class="text-[20px] !mt-4"><b>That's about 1%</b> of the adult US population.</p>
 
               <!-- <div class="lg:block hidden absolute bottom-[80px] left-0 right-0 h-[5px] bg-black z-9"></div> -->
               <div
@@ -245,7 +256,7 @@
 
               <img data-aos="zoom-in" data-aos-delay="1300" src="https://hsfoundation.phormuladev.com/assets/In-the-future.svg" class="!mt-[30px] lg:!mt-0" />
               <p class="text-[20px] !mt-[40px]">
-                Based on our observations,* we expect at least <b>300,000 more people</b> to be <b>newly diagnosed</b> with HS every year<sup>1</sup>
+                Based on our observations,* we expect at least <b>300,000 more people</b> to be <b>newly diagnosed</b> with HS every year<sup>1</sup>.
               </p>
 
               <!-- <div class="lg:block hidden absolute bottom-[80px] left-0 right-0 h-[5px] bg-black z-9"></div> -->
@@ -266,8 +277,8 @@
                 <span class="lg:hidden text-[26px] font-bold !mb-[60px]">By 2035</span>
               </div>
               <img data-aos="zoom-in" data-aos-delay="1900" src="https://hsfoundation.phormuladev.com/assets/2035.svg" class="lg:!mt-[-80px] !mt-[30px]" />
-              <p class="text-[20px] !mt-[40px]"><b>More than 5 million Americans</b> are projected to have an <b>HS diagnosis by 2035</b><sup>1</sup></p>
-              <p class="text-[20px] !mt-4"><b>That's around 2%</b> of the adult population</p>
+              <p class="text-[20px] !mt-[40px]"><b>More than 5 million Americans</b> are projected to have an <b>HS diagnosis by 2035</b><sup>1</sup>.</p>
+              <p class="text-[20px] !mt-4"><b>That's around 2%</b> of the adult population.</p>
               <!-- <div class="lg:block hidden absolute bottom-[80px] left-0 right-0 h-[5px] bg-black z-9"></div> -->
               <div
                 data-aos="fade-down"
@@ -287,16 +298,16 @@
     <!-- ---------- -->
     <div id="challenges" class="flex flex-col max-w-[1600px] m-auto justify-center lg:p-[80px_40px_40px_40px] p-[80px_20px_20px_20px]">
       <h1 class="lg:!text-[30px] !text-[22px] !font-bold text-center max-w-[1000px] ml-auto mr-auto !mb-6">
-        Until now, patients with HS may have endured a prolonged journey to diagnosis and faced a substantial disease burden
+        Until now, patients with HS may have endured a prolonged journey to diagnosis and faced a substantial disease burden.
       </h1>
       <div class="flex lg:flex-row flex-col min-h-[700px] relative max-w-[1600px] w-full m-auto">
         <div class="flex lg:!flex-col flex-row-reverse justify-center items-center lg:w-1/2 w-full p-[20px] lg:p-0">
           <hr class="lg:hidden block w-[5px] h-full text-[#111111] bg-[#111111] absolute top-0 z-4" />
           <div class="flex lg:!flex-row flex-col h-1/2 justify-center lg:items-end lg:w-full w-1/2">
             <div class="flex flex-col lg:!justify-end justify-center lg:pb-[30px] lg:pl-0 pl-[30px] items-center w-full max-w-[300px] h-1/2 min-h-[350px] relative">
-              <img data-aos="fade-down" data-aos-delay="1000" src="https://hsfoundation.phormuladev.com/assets/Diagnoses.svg" class="lg:max-w-[130px] max-w-[90px]" />
-              <p data-aos="fade-down" data-aos-delay="1000" class="mt-4 lg:text-[17px] text-[14px] text-center">
-                In <b>more than 50% of cases</b>, patients have received 2 <b>incorrect diagnoses</b> per year before being correctly diagnosed with HS<sup>1</sup>
+              <img data-aos="fade-down" data-aos-delay="1000" src="https://hsfoundation.phormuladev.com/assets/Diagnoses.svg" class="lg:max-w-[110px] max-w-[90px]" />
+              <p data-aos="fade-down" data-aos-delay="1000" class="mt-4 lg:text-[16px] text-[14px] text-center">
+                In <b>more than 50% of cases</b>, patients have received 2 <b>incorrect diagnoses</b> per year before being correctly diagnosed with HS<sup>1</sup>.
               </p>
               <div data-aos="fade-down" data-aos-delay="900" class="lg:flex hidden w-[35px] h-[35px] bg-white rounded-full absolute bottom-[-20px] justify-center items-center">
                 <div class="w-[28px] h-[28px] bg-linear-[180deg,#8906CE_0%,#335BA9_100%] rounded-full"></div>
@@ -313,9 +324,9 @@
           <div class="lg:block hidden lg:h-[5px] bg-[#111111] lg:w-full w-[5px] h-full"></div>
           <div class="flex lg:!flex-row flex-col lg:h-1/2 lg:w-full w-1/2 justify-between">
             <div class="flex flex-col lg:!justify-start justify-center lg:pt-[30px] lg:pr-0 pr-[30px] items-center w-full max-w-[300px] min-h-[350px] relative">
-              <img data-aos="fade-up" data-aos-delay="600" src="https://hsfoundation.phormuladev.com/assets/Symptoms.svg" class="lg:max-w-[130px] max-w-[90px]" />
-              <p data-aos="fade-up" data-aos-delay="600" class="mt-4 lg:text-[17px] text-[14px] text-center">
-                <b>Since symptoms started</b>, people with HS have faced an average delay <b>of 7 years before receiving a diagnosis<sup>2</sup></b>
+              <img data-aos="fade-up" data-aos-delay="600" src="https://hsfoundation.phormuladev.com/assets/Symptoms.svg" class="lg:max-w-[110px] max-w-[90px]" />
+              <p data-aos="fade-up" data-aos-delay="600" class="mt-4 lg:text-[16px] text-[14px] text-center">
+                <b>Since symptoms started</b>, people with HS have faced an average delay <b>of 7 years before receiving a diagnosis<sup>2</sup>.</b>
               </p>
               <div data-aos="fade-up" data-aos-delay="500" class="lg:flex hidden w-[35px] h-[35px] bg-white rounded-full absolute top-[-20px] justify-center items-center">
                 <div class="w-[28px] h-[28px] bg-linear-[180deg,#8906CE_0%,#335BA9_100%] rounded-full"></div>
@@ -329,15 +340,13 @@
               </div>
             </div>
             <div class="flex flex-col lg:!justify-start justify-center lg:pt-[30px] lg:pr-0 pr-[30px] items-center w-full max-w-[300px] min-h-[350px] relative">
-              <img data-aos="fade-up" data-aos-delay="1400" src="https://hsfoundation.phormuladev.com/assets/Profile.svg" class="lg:max-w-[130px] max-w-[90px]" />
-              <div data-aos="fade-up" data-aos-delay="1400" class="min-h-[100px] lg:text-[17px] text-[14px] mt-4 flex justify-center items-start">
-                <p class="text-center">
-                  HS has affected all age groups<sup>1</sup>, with an average age of:<br /><b
-                    >Females: 36 years;<br />
-                    Males: 40 years</b
-                  >
-                </p>
-              </div>
+              <img data-aos="fade-up" data-aos-delay="1400" src="https://hsfoundation.phormuladev.com/assets/Profile.svg" class="lg:max-w-[110px] max-w-[90px]" />
+              <p data-aos="fade-up" data-aos-delay="600" class="mt-4 lg:text-[16px] text-[14px] text-center">
+                HS has affected all age groups<sup>1</sup>, with an average age of:<br /><b
+                  >Females: 36 years;<br />
+                  Males: 40 years.</b
+                >
+              </p>
               <div data-aos="fade-up" data-aos-delay="1300" class="lg:flex hidden w-[35px] h-[35px] bg-white rounded-full absolute top-[-20px] justify-center items-center">
                 <div class="w-[28px] h-[28px] bg-linear-[180deg,#8906CE_0%,#335BA9_100%] rounded-full"></div>
               </div>
@@ -363,9 +372,9 @@
         <div class="flex lg:!flex-col flex-row-reverse justify-center items-center lg:w-1/2 w-full">
           <div class="flex lg:!flex-row flex-col h-1/2 justify-between w-full">
             <div class="flex flex-col lg:justify-end justify-center lg:pb-[30px] lg:pl-0 pl-[30px] items-center w-full max-w-[300px] min-h-[350px] relative">
-              <img data-aos="fade-down" data-aos-delay="1800" src="https://hsfoundation.phormuladev.com/assets/Surgical-treatments.svg" class="lg:max-w-[130px] max-w-[90px]" />
+              <img data-aos="fade-down" data-aos-delay="1800" src="https://hsfoundation.phormuladev.com/assets/Surgical-treatments.svg" class="lg:max-w-[110px] max-w-[90px]" />
               <div data-aos="fade-down" data-aos-delay="1800" class="min-h-[100px] mt-4 flex justify-center items-start">
-                <p class="lg:text-[17px] text-[14px] text-center"><b>Over 20% of patients have received surgical treatments</b>, averaging 1.2 surgeries per year<sup>1</sup></p>
+                <p class="lg:text-[17px] text-[14px] text-center"><b>"Over 20% of patients have received surgical treatments</b><sup>1</sup>.</p>
               </div>
               <div data-aos="fade-down" data-aos-delay="1700" class="lg:flex hidden w-[35px] h-[35px] bg-white rounded-full absolute bottom-[-20px] justify-center items-center">
                 <div class="w-[28px] h-[28px] bg-linear-[180deg,#8906CE_0%,#335BA9_100%] rounded-full"></div>
@@ -379,9 +388,9 @@
               </div>
             </div>
             <div class="flex flex-col lg:justify-end justify-center lg:pb-[30px] lg:pl-0 pl-[30px] items-center w-full max-w-[300px] min-h-[350px] relative">
-              <img data-aos="fade-down" data-aos-delay="2600" src="https://hsfoundation.phormuladev.com/assets/Opioids.svg" class="lg:max-w-[130px] max-w-[90px]" />
+              <img data-aos="fade-down" data-aos-delay="2600" src="https://hsfoundation.phormuladev.com/assets/Opioids.svg" class="lg:max-w-[110px] max-w-[90px]" />
               <div data-aos="fade-down" data-aos-delay="2600" class="min-h-[100px] mt-4 flex justify-center items-start">
-                <p class="lg:text-[17px] text-[14px] text-center"><b>More than half</b> of people with HS <b>have been prescribed opioids to manage pain</b><sup>1</sup></p>
+                <p class="lg:text-[17px] text-[14px] text-center"><b>More than half</b> of people with HS <b>have been prescribed opioids to manage pain</b><sup>1</sup>.</p>
               </div>
               <div data-aos="fade-down" data-aos-delay="2500" class="lg:flex hidden w-[35px] h-[35px] bg-white rounded-full absolute bottom-[-20px] justify-center items-center">
                 <div class="w-[28px] h-[28px] bg-linear-[180deg,#8906CE_0%,#335BA9_100%] rounded-full"></div>
@@ -398,9 +407,9 @@
           <div class="lg:block hidden lg:h-[5px] bg-[#111111] lg:w-full w-[5px] h-full"></div>
           <div class="flex lg:flex-row flex-col h-1/2 justify-center w-full">
             <div class="flex flex-col lg:justify-start justify-center lg:pt-[30px] lg:pr-0 pr-[30px] items-center w-full max-w-[300px] h-1/2 min-h-[350px] relative">
-              <img data-aos="fade-down" data-aos-delay="2200" src="https://hsfoundation.phormuladev.com/assets/Emergency.svg" class="lg:max-w-[130px] max-w-[90px]" />
+              <img data-aos="fade-down" data-aos-delay="2200" src="https://hsfoundation.phormuladev.com/assets/Emergency.svg" class="lg:max-w-[110px] max-w-[90px]" />
               <div data-aos="fade-down" data-aos-delay="2200" class="min-h-[100px] mt-4 flex justify-center items-start">
-                <p class="lg:text-[17px] text-[14px] text-center"><b>HS patients</b> have visited the emergency department <b>5 times per year on average</b><sup>1</sup></p>
+                <p class="lg:text-[17px] text-[14px] text-center"><b>HS patients</b> have visited the emergency department <b>5 times per year on average</b><sup>1</sup>.</p>
               </div>
               <div data-aos="fade-down" data-aos-delay="2100" class="lg:flex hidden w-[35px] h-[35px] bg-white rounded-full absolute top-[-20px] justify-center items-center">
                 <div class="w-[28px] h-[28px] bg-linear-[180deg,#8906CE_0%,#335BA9_100%] rounded-full"></div>
@@ -428,38 +437,38 @@
         <!-- ITEM 1 -->
         <div data-aos="fade-right" data-aos-delay="400" class="flex flex-col w-full lg:min-w-[auto] min-w-[280px]">
           <div class="border-solid border-[5px] border-white w-full min-h-[200px] relative flex justify-center items-center p-[20px]">
-            <p class="text-white lg:text-[20px] text-[16px] text-center">Additional treatments are being developed to provide more options for patients with HS</p>
+            <p class="text-white lg:text-[20px] text-[16px] text-center">Additional treatments are being developed to provide more options for patients with HS.</p>
             <div class="absolute bottom-[-13px] right-0 left-0 m-auto bg-[#8906CE] border-white w-[20px] h-[20px] border-t-[5px] border-r-[5px] transform rotate-135"></div>
           </div>
           <div class="lg:min-h-[600px] min-h-[500px] w-full flex flex-col items-center p-[20px] bg-[#DED7F5] mt-[30px]">
             <img src="https://hsfoundation.phormuladev.com/assets/Aditional-treatments.svg" class="w-full lg:max-w-[160px] max-w-[120px]" />
             <img src="https://hsfoundation.phormuladev.com/assets/15plus.svg" class="lg:max-w-[90px] max-w-[70px] mt-[30px]" />
-            <p class="text-[18px] text-[#111111] mt-[20px] text-center font-[600]">treatments currently being studied in HS clinical trials<sup>3</sup></p>
+            <p class="text-[18px] text-[#111111] mt-[20px] text-center font-[600]">treatments currently being studied in HS clinical trials<sup>3</sup>.</p>
           </div>
         </div>
         <!-- ITEM 2 -->
         <div data-aos="fade-right" data-aos-delay="800" class="flex flex-col lg:min-w-[auto] min-w-[280px]">
           <div class="border-solid border-[5px] border-white w-full min-h-[200px] relative flex justify-center items-center p-[20px]">
-            <p class="text-white lg:text-[20px] text-[16px] text-center">The use of biologics and other new targeted treatments is increasing</p>
+            <p class="text-white lg:text-[20px] text-[16px] text-center">The use of biologics and other new targeted treatments is increasing.</p>
             <div class="absolute bottom-[-13px] right-0 left-0 m-auto bg-[#8906CE] border-white w-[20px] h-[20px] border-t-[5px] border-r-[5px] transform rotate-135"></div>
           </div>
           <div class="lg:min-h-[600px] min-h-[500px] w-full flex flex-col items-center p-[20px] bg-[#DED7F5] mt-[30px]">
             <img src="https://hsfoundation.phormuladev.com/assets/Systemic-treatments.svg" class="w-full lg:max-w-[160px] max-w-[120px]" />
             <img src="https://hsfoundation.phormuladev.com/assets/30percent.svg" class="lg:max-w-[90px] max-w-[70px] mt-[30px]" />
-            <p class="text-[18px] text-[#111111] !mt-[20px] text-center font-[600]">Increase in the use of biologic treatments in 2024 compared to 2023<sup>1</sup></p>
+            <p class="text-[18px] text-[#111111] !mt-[20px] text-center font-[600]">Increase in the use of biologic treatments in 2024 compared to 2023<sup>1</sup>.</p>
           </div>
         </div>
         <!-- ITEM 3 -->
         <div data-aos="fade-right" data-aos-delay="1200" class="flex flex-col lg:min-w-[auto] min-w-[280px]">
           <div class="border-solid border-[5px] border-white w-full min-h-[200px] relative flex justify-center items-center p-[20px]">
-            <p class="text-white lg:text-[20px] text-[16px] text-center">New drugs are exploring higher efficacy thresholds, bringing hope to HS patients</p>
+            <p class="text-white lg:text-[20px] text-[16px] text-center">New drugs are exploring higher efficacy thresholds, bringing hope to HS patients.</p>
             <div class="absolute bottom-[-13px] right-0 left-0 m-auto bg-[#8906CE] border-white w-[20px] h-[20px] border-t-[5px] border-r-[5px] transform rotate-135"></div>
           </div>
           <div class="lg:min-h-[600px] min-h-[500px] w-full flex flex-col items-center p-[20px] bg-[#DED7F5] mt-[30px]">
             <img src="https://hsfoundation.phormuladev.com/assets/New-drugs.svg" class="w-full lg:max-w-[160px] max-w-[120px]" />
             <img src="https://hsfoundation.phormuladev.com/assets/HiSCR75.svg" class="lg:max-w-[90px] max-w-[70px] mt-[30px]" />
             <p class="text-[18px] text-[#111111] !mt-[20px] text-center font-[600]">
-              The main treatment goal in clinical trials is increasing from HiSCR50 to HiSCR75, elevating the bar for new treatments<sup>3</sup>
+              The main treatment goal in clinical trials is increasing from HiSCR50 to HiSCR75, elevating the bar for new treatments<sup>3</sup>.
             </p>
           </div>
         </div>
@@ -467,14 +476,14 @@
         <div data-aos="fade-right" data-aos-delay="1600" class="flex flex-col lg:min-w-[auto] min-w-[280px]">
           <div class="border-solid border-[5px] border-white w-full min-h-[200px] relative flex justify-center items-center p-[20px]">
             <p class="text-white lg:text-[20px] text-[16px] text-center">
-              Dermatologists are getting HS-specific training, and there is growing awareness of HS among healthcare professionals
+              Dermatologists are getting HS-specific training, and there is growing awareness of HS among healthcare professionals.
             </p>
             <div class="absolute bottom-[-13px] right-0 left-0 m-auto bg-[#8906CE] border-white w-[20px] h-[20px] border-t-[5px] border-r-[5px] transform rotate-135"></div>
           </div>
           <div class="lg:min-h-[600px] min-h-[500px] w-full flex flex-col items-center p-[20px] bg-[#DED7F5] mt-[30px]">
             <img src="https://hsfoundation.phormuladev.com/assets/HS-specific-training.svg" class="w-full lg:max-w-[160px] max-w-[120px]" />
             <img src="https://hsfoundation.phormuladev.com/assets/10percent.svg" class="lg:max-w-[90px] max-w-[70px] mt-[30px]" />
-            <p class="text-[18px] text-[#111111] !mt-[20px] text-center font-[600]">of dermatology residents now attend HS specialist training<sup>4</sup></p>
+            <p class="text-[18px] text-[#111111] !mt-[20px] text-center font-[600]">of dermatology residents now attend HS specialist training<sup>4</sup>.</p>
           </div>
         </div>
       </div>
@@ -600,6 +609,7 @@
       }
 
       if (!timelineDiv && !challengesDiv && !improvingDiv) {
+        console.log("entrou");
         changeTabs(null);
       }
     }
